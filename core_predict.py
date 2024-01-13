@@ -11,10 +11,6 @@ classes = []
 with open(path_yolov_names, "r") as f:
     classes = [line.strip() for line in f]
 
-classes = []
-with open(path_yolov_names, "r") as f:
-    classes = [line.strip() for line in f]
-
 class CorePredict:
     def predict(self, image, age):
         height, width, _ = image.shape
